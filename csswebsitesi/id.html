@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Css Dersleri</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+    <div id="header"><h1><a href="cssogreniyorum.html">Css Dersleri</a></h1></div>
+      <div id="wrapper">
+        <div id="content">
+            <h1><b> Css ID ve CLASS Seçimi</b></h1>
+          <p> <b>Class Kullanımı</b> <br>
+            <br>Bir HTML kaynağına baktığınızda bir element (tag) özelliği olarak class="stil" şeklinde bir
+            özellik belirtildiğini görebilirsiniz. <br>
+
+             Yukarıdaki div elementi içinde yer alan class="stil", o div elementi için CSS özellikleri belirtmemizi sağlayan bir yoldur. CSS dosyamızda şu şekilde bir ifade varsa:
+
+  <br> .stil {
+    <br>  font: 10pt Tahoma, Verdana;
+    <br>  color: blue;
+  <br> }
+
+
+  <br>Nokta (.) ile başlayan bir stil oluşturduk ve adını biz verdik. Bu demektir ki class="stil" ile belirttiğimiz tüm elementler 10 punto Tahoma yazı tipinde ve mavi (blue) renginde olacaktır. Tabi istersek sadece tek bir elementte geçerli olmasını sağlayabiliriz. Örneğin sadece DIV elementlerinde geçerli olmasını istiyorsak:
+
+  <br> div.stil {
+    <br>  font: 10pt Tahoma, Verdana;
+    <br>  color: blue;
+  <br> }
+
+
+<br>".stil" yani seçim adımızın başına div getirmemiz yeterli olacaktır. Bu durumda bu CSS kodu sadece DIV elementlerinde kullanılabilir olacaktır.
+
+<p>
+  <img src="class.png" >
+</p>
+
+<br>CLASS özelliği kullanmanın bize sağlayacağı yararlara şöyle bir bakalım:
+
+<br>Kendimizin adlandırdığı özel stiller yaratmak ve kullanmak
+<br>Bir stili birden fazla elementte kullanabilmek
+<br>Stillere CSS de yer verip HTML kodlarımızı sürekli tekrarlanan uzun CSS kodlarından arındırmak
+<br><br><br> <b>ID Kullanımı</b><br>
+<br>ID özelliği ile de stiller yaratabiliriz. CLASS'tan farklı yanları:
+
+Sadece tek bir elementte kullanılabilir.
+Aynı id değeri iki elemente verilemez (Her id sadece tek bir elementte kullanılabilir).
+Stil dosyamızda CLASS'da . (nokta) kullanırdık, ancak id özelliğine göre stilleme yapacaksak # (diyez) kullanırız.
+
+
+
+
+<br> ID değeri "stil" olan bir DIV elementi görüyoruz. CSS dosyamızda bu elemente özel stil tasarlarken aşağıdaki şekilde kod yapısını oluşturmalıyız:
+
+   <br>#stil {
+  <br>    font: 10pt Tahoma, Verdana;
+  <br>    color: blue;
+   <br>}
+
+
+Görüldüğü gibi bu kez diyez (#) ile başlattık. Sadece tek bir elemente özel stil tasarlamış olduk (Neden? Çünkü başka bir elementte yine id değeri "stil" belirtilemez.)
+
+Ayrıca unutmadan söyleyelim hiçbir ID değeri rakamla başlamaz. ID, HTML dosyasında o elementi bulmamızı sağlar, bu nedenle aynı ismi veremeyiz. Aynı ismi vermemizin diğer yaratacağı sorun Java Script'te bu elementi id özelliğine göre kullanamamak olacaktır. Son olarak bazı tarayıcılar birden fazla aynı id kullanılan HTML dosyalarında stilleri görmezden gelebilir.
+          </p>
+            <br><br><br><br>  <br><br><br><br>   <br><br><br><br>  <br><br><br><br>
+        </div>
+      </div>
+<br><br>
+      <div id="navigation" style="float:right">
+          <ul>
+            <li><a href="kod.html"> <b>CSS Kod Yapısı</b> </a></li>
+            <li><a href="id.html"> <b>CSS ID ve Class Yapısı</b></a></li>
+            <li><a href="ekle.html"> <b>CSS Nasıl Eklenir</b> </a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div id="footer">
+          <br>
+            <h4>Bizimle İletişime Geç!</h4>
+            <p> Call: <b> 555555555</b> &nbsp; Email:<a href="mailto:ecenr502@gmail.com"> <b>ecenr502@gmail.com </b> </a></p>
+
+            <p>© 2020 Tüm Hakları Saklıdır. <br>
+              Hazırlayan: Ece Nur DOĞAN</></p>
+              <br>
+          </div>
+  </body>
+</html>
